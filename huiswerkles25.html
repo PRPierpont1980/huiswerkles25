@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="Ned">
+    <head>
+        <meta charset="utf-8">
+        <title>Huiswerkles25</title>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+        </script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js">
+        </script>
+        <link rel="stylesheet" type="text/css" href="huiswerkles25.css">
+        <link rel="stylesheet"
+        href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+        <script type="text/javascript">
+        $(function() {
+        $("#accordion").accordion();
+        });
+        $(document).ready(function() {
+        $("#knop").click(function() {
+        var naam = $("#naam").val();
+        var boek = $("#boek").val();
+        var film = $("#film").val();
+        window.alert("Ik ben " + naam + 
+        " mijn favoriete boek is " + boek + 
+        " Mijn favoriete film is " + film
+        );
+        });
+        });
+        </script>
+    </head>
+    <body>
+        <header><br><h1><u>Huiswerkles25</u></h1><br></header>
+        <form><br>
+            Wat is uw naam?
+            <input type="text" id="naam"><br><br>
+            Favoriete boek?
+            <input type="text" id="boek"><br><br>
+            Favoriete film?
+            <input type="text" id="film"><br><br>
+            <input id="knop" name="knop" type="button"
+            value="Klik op deze knop"><br><br>
+            </form>
+            <div id="accordion">
+                <h3>Introductie</h3>
+                <div>
+                <p>Ik ben Geboren in Nederland, en ik heb daar 28 jaar 
+                    gewoond. Na 28 jaar in Nederland gewoond te hebben, 
+                    ben ik verhuist naar Suriname, waar ik heb gewerkt 
+                    als support engineer. Daar is ook waar ik mijn 
+                    Braziliaanse vrouw heb ontmoet, en waar onze dochter 
+                    geboren is. In 2018 namen we de beslissing om naar 
+                    België te verhuizen, en daar heb ik mijn secundair 
+                    onderwijs behaalt, en ben gaan werken als support 
+                    engineer. Daar ben ik ook tot de ontdekking gekomen 
+                    dat ik een passie heb voor programmeren, en vandaar 
+                    dat ik de cursus Full-Stack Devoloper ben gaan 
+                    volgen bij NHA.</p>
+                </div>
+                <h3>Hobby's</h3>
+                <div>
+                <p>Mijn Hobbys's zijn, met computers werken, 
+                    basketballen, en voetballen.
+                </p>
+                </div>
+                </div>
+                <footer>&#169; PIERPONT 27/05/2023</footer>
+            <noscript>
+            Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+            </noscript>
+    </body>
+</html>
